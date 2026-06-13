@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { createClient } from "@supabase/supabase-js";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://risksentry.onrender.com";
 const SUPABASE_URL = "https://kccqsakoujtldwukbzal.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtjY3FzYWtvdWp0bGR3dWtiemFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyNzExODAsImV4cCI6MjA5NTg0NzE4MH0.VkKr3VVPLjJ37GMngLYtkZr9KZMYnVicP-0hnYQVViU";
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
