@@ -8,6 +8,10 @@
 -- Asegurar columna tipo en observaciones (por si no existe)
 ALTER TABLE observaciones ADD COLUMN IF NOT EXISTS tipo TEXT DEFAULT 'Observación';
 
+-- Recrear nivel_riesgo como TEXT (el backend la calcula; DROP es seguro)
+ALTER TABLE riesgos DROP COLUMN IF EXISTS nivel_riesgo;
+ALTER TABLE riesgos ADD COLUMN nivel_riesgo TEXT;
+
 
 -- ═══════════════════════════════════════════════════════════
 -- 1. ACTIVOS  (10 activos — mix HW/SW/D/COM)
