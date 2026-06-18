@@ -3,9 +3,10 @@ backend/.env
 backend/venv/
 backend/__pycache__/
 backend/**/__pycache__/
-backend/reporte_riesgos.pdf
+backend/reporte_*.pdf
 
 # Frontend
+frontend/.env
 frontend/node_modules/
 frontend/dist/
 
